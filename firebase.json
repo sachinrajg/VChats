@@ -1,14 +1,4 @@
 {
-<<<<<<< HEAD
-  "hosting": {
-    "public": "Chats",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }
-=======
   "functions": [
     {
       "source": "functions",
@@ -25,5 +15,4 @@
       ]
     }
   ]
->>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
 }
