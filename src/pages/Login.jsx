@@ -26,11 +26,7 @@ const Login = () => {
     return (
         <div className="formContainer">
             <div className="formWrapper">
-<<<<<<< HEAD
-                <span className="logo">Vchats</span>
-=======
                 <span className="logo">VChats</span>
->>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
                 <span className="register-title">Login</span>
                 <form onSubmit={handleSubmit}>
                     <input type="email" placeholder="Email" required />

@@ -5,10 +5,7 @@ import "./style.scss";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
-<<<<<<< HEAD
-=======
 import Account from "./components/Account";
->>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -32,22 +29,9 @@ function App() {
             </ProtectedRoute>
           }
         />
-<<<<<<< HEAD
-        <Route
-          path="/"
-          element={
-            <ProtectedRoute>
-              <Home />
-            </ProtectedRoute>
-          }
-        />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-=======
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/account" element={<Account />} />
->>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
       </Routes>
     </BrowserRouter>
   );

@@ -12,27 +12,6 @@ const Message = ({ message }) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }, [message]);
 
-<<<<<<< HEAD
-  const getMessageTime = (timestamp) => {
-    if (!timestamp) {
-      return "Invalid Time";
-    }
-
-    // Check if the timestamp needs conversion to milliseconds
-    const timestampInMillis = timestamp < 1e12 ? timestamp * 1000 : timestamp;
-
-    if (isNaN(timestampInMillis)) {
-      return "Invalid Time";
-    }
-
-    const messageDate = new Date(timestampInMillis);
-    const hours = messageDate.getHours();
-    const minutes = messageDate.getMinutes();
-    return `${hours}:${minutes < 10 ? "0" + minutes : minutes}`;
-  };
-
-=======
->>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
   return (
     <div
       ref={ref}
@@ -47,11 +26,7 @@ const Message = ({ message }) => {
           }
           alt=""
         />
-<<<<<<< HEAD
-        <span>{getMessageTime(message.date)}</span>
-=======
         <span>just now</span>
->>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
       </div>
       <div className="messageContent">
         <p>{message.text}</p>

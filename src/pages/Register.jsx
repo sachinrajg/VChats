@@ -93,11 +93,7 @@ const Register = () => {
           {error && <span className="error">{error}</span>}
         </form>
         <p>
-<<<<<<< HEAD
-        You do have an account? <Link to="/login">Login</Link>
-=======
         You do have an account? <Link to="/home">Login</Link>
->>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
         </p>
       </div>
     </div>

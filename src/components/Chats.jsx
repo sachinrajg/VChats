@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React, { useEffect, useState, useContext } from "react";
-=======
 import { useEffect, useState, useContext } from "react";
->>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
 import { onSnapshot, doc } from "firebase/firestore";
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
