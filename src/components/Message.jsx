@@ -12,6 +12,7 @@ const Message = ({ message }) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   }, [message]);
 
+<<<<<<< HEAD
   const getMessageTime = (timestamp) => {
     if (!timestamp) {
       return "Invalid Time";
@@ -30,6 +31,8 @@ const Message = ({ message }) => {
     return `${hours}:${minutes < 10 ? "0" + minutes : minutes}`;
   };
 
+=======
+>>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
   return (
     <div
       ref={ref}
@@ -44,7 +47,11 @@ const Message = ({ message }) => {
           }
           alt=""
         />
+<<<<<<< HEAD
         <span>{getMessageTime(message.date)}</span>
+=======
+        <span>just now</span>
+>>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
       </div>
       <div className="messageContent">
         <p>{message.text}</p>

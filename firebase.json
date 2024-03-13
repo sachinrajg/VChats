@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "hosting": {
     "public": "Chats",
     "ignore": [
@@ -7,4 +8,22 @@
       "**/node_modules/**"
     ]
   }
+=======
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint",
+        "npm --prefix \"$RESOURCE_DIR\" run build"
+      ]
+    }
+  ]
+>>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
 }

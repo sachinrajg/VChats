@@ -323,3 +323,83 @@
     }
   }
 }
+<<<<<<< HEAD
+=======
+// account.scss
+
+.account-container {
+  background-color: #a7bcff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    color: #5d5b8d;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    div {
+      label {
+        color: #5d5b8d;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input {
+        padding: 15px;
+        border: none;
+        width: 250px;
+        border-bottom: 1px solid #a7bcff;
+        &::placeholder {
+          color: rgb(175, 175, 175);
+        }
+      }
+    }
+
+    button {
+      background-color: #7b96ec;
+      color: white;
+      padding: 10px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .profile-container {
+    margin-top: 20px;
+    width: 100px; /* Set the width */
+    height: 100px; /* Set the height */
+    position: relative; /* Position container relatively to its content */
+    overflow: hidden; /* Hide any overflow */
+
+    .profile-image {
+      width: 100%; /* Ensure the image takes up the full width of the container */
+      height: auto; /* Automatically adjust the height to maintain aspect ratio */
+      max-width: 100%; /* Ensure the image does not exceed the container width */
+      max-height: 100%; /* Ensure the image does not exceed the container height */
+      border-radius: 50%;
+      object-fit: cover; /* Scale the image while preserving aspect ratio and covering the container */
+      position: absolute; /* Position image absolutely within the container */
+      top: 50%; /* Position image at the vertical center */
+      left: 50%; /* Position image at the horizontal center */
+      transform: translate(-50%, -50%); /* Center the image */
+    }
+  }
+
+
+
+  .error {
+    color: red;
+  }
+}
+>>>>>>> 4807392904389cdac07cfdc7a319e0ce3f4e560e
